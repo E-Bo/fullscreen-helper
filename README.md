@@ -27,11 +27,19 @@ fullscreen-helper.js is a lightweight jQuery plugin that helps you toggle fullsc
         var fullCallBack = function(){
             fullscreenBtn.addClass('active');
             console.log('enter');
+            setTimeOut(function(){
+                //fix your page layout here if needed
+                //e.g. myChart.reDraw();
+            },400);
         };
 
         var exitFullCallBack = function(){
             fullscreenBtn.removeClass('active');
             console.log('exit');
+            setTimeOut(function(){
+                //fix your page layout here if needed
+                //e.g. myChart.reDraw();
+            },400);
         }
 
         var myFullScreenHelper = new fullScreenHelper({
