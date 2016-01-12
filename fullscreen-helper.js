@@ -43,7 +43,7 @@ fullScreenHelper.prototype = {
             eventName: 'mozfullscreenchange',
             stateName: 'mozFullScreen',
             requestFullScreen: 'mozRequestFullScreen',
-            cancelFullScreen: 'webkitCancelFullScreen'
+            cancelFullScreen: 'mozCancelFullScreen'
         },
         'webkit' : {
             eventName: 'webkitfullscreenchange',
